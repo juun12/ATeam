@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 scanner
 chal
+=======
+<<<<<<< HEAD
+efgh
+=======
+abcd
+>>>>>>> 5f78744cd43a5b121957d42f60e8801be059a652
+>>>>>>> 6b8a6c050e5fe4517a12d158eaa1dc27b3490324
