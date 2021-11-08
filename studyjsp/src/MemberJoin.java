@@ -21,7 +21,7 @@ public class MemberJoin extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
+//테스트용2222
 	/**
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
