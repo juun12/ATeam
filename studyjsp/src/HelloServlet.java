@@ -11,11 +11,19 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException {
+<<<<<<< HEAD
 		//① 클라이언트의 요청을 받는다 : 매개변수를 가져온다 ▶ HttpServletRequest
 		//② 비지니스 로직 : DB연동하여 결과를 리턴한다 ▶ 별도의 클래스에 작성
 		//③ 프리젠테이션 로직 : 결과를 응답(html, jsp) ▶ HttpServletResponse
 		response.setContentType("text/html; charset=utf-8");	//MIME Type
 		PrintWriter out = response.getWriter();	//출력스트림
+=======
+		//클라이언트 요청을 받는다. 매개변수를 가져온다 ->HttpServletRequest
+		//2.비지니스 로직: DB와 연동하여 결과를 리턴한다. 별도의 클래스에 작성
+		//3.프리젠테이션 로직 :결과를 응답(html,jsp) -> HttpServletResponse
+		response.setContentType("text/html; charset=utf-8"); //MIME Type
+		PrintWriter out = response.getWriter();
+>>>>>>> origin/LJk
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>Response Servlet</title>");
@@ -23,6 +31,15 @@ public class HelloServlet extends HttpServlet {
 		out.println("<body>");
 		out.println("<h3>Welcome to Hello Servlet!</h3>");
 		out.println("</body>");
+<<<<<<< HEAD
 		out.println("</html>");
 	}//service()
 }//class
+=======
+		
+		
+		out.println("</html>");
+	}//service()
+}//class
+
+>>>>>>> origin/LJk
