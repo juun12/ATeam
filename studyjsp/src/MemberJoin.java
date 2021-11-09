@@ -27,7 +27,11 @@ public class MemberJoin extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
+<<<<<<< HEAD
 		// 1.클라이언트의 요청을 받는다 : 매개변수를 가져온다 -> HttpServletRequest
+=======
+		// 클라이언트의 요청을 받는다 : 매개변수를 가져온다 HttpServletRequest
+>>>>>>> lju
 		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("name");
 		String id = request.getParameter("id");
@@ -35,11 +39,19 @@ public class MemberJoin extends HttpServlet {
 		int age = Integer.parseInt(request.getParameter("age"));
 		String addr = request.getParameter("addr");
 		
+<<<<<<< HEAD
 		System.out.println("이름 : " + name);
 		System.out.println("아이디 : " + id);
 		System.out.println("비밀번호 : " + pw);
 		System.out.println("나이 : " + age);
 		System.out.println("주소 : " + addr);
+=======
+		System.out.println("이름:"+name);
+		System.out.println("아이디:"+id);
+		System.out.println("비밀번호:"+pw);
+		System.out.println("나이:"+age);
+		System.out.println("주소:"+addr);
+>>>>>>> lju
 	}
 
 	/**

@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/hs.do")  //annotation(클래스중하나) Servlet Mapping 자동설정
+public class HelloServlet extends HttpServlet {
+	protected void service(HttpServletRequest request, HttpServletResponse response) 
+		throws ServletException, IOException {
+		//① 클라이언트의 요청을 받는다 : 매개변수를 가져온다 ▶ HttpServletRequest
+		//② 비지니스 로직 : DB연동하여 결과를 리턴한다. ▶ 별도의 클래스에 작성
+		//③ 프리젠테이션 로직 : 결과를 응답(hTML, JSP) ▶ HttpServletResponse(HTML코드 응답하는 역할을 담당)
+		//④
+		response.setContentType("text/html; charsest=utf-8");  //MIME Type
+		PrintWriter out = response.getWriter(); //출력스트림
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>Response Servlet</title>");	
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<h3>Welcome to Hello Servlet!</h3>");		
+		out.println("</body>");		
+		out.println("</html>");
+		
+	}//service()
+}//class
